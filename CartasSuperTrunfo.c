@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> // Necessário para atof e atoi
-#include <string.h> // Necessário para strlen
+#include <stdlib.h> 
 
 int main() {
     // Variáveis para a Carta 1
@@ -21,10 +20,10 @@ int main() {
     float pib2;
     int pontos_turisticos2;
 
-    char buffer[100]; // Buffer temporário para leitura
+    char buffer[100]; 
 
-    // Leitura dos dados da Carta 1
-    printf("Digite os dados da Carta 1:\n");
+    //Leitura dos dados da Carta 1
+    printf(" Olá, você está no jogo Super Trunfo. Meu nome é Vinícius. Vamos começar. Digite os dados da Carta 1:\n");
 
     printf("Estado (A-H): ");
     fgets(buffer, sizeof(buffer), stdin);
@@ -36,7 +35,7 @@ int main() {
 
     printf("Nome da Cidade: \n");
     fgets(cidade1, sizeof(cidade1), stdin);
-    cidade1[strcspn(cidade1, "\n")] = 0; // Remover a nova linha do fgets
+    cidade1[strcspn(cidade1, "\n")] = 0; 
 
     printf("Populacao: ");
     fgets(buffer, sizeof(buffer), stdin);
@@ -54,7 +53,7 @@ int main() {
     fgets(buffer, sizeof(buffer), stdin);
     sscanf(buffer, "%d", &pontos_turisticos1);
 
-    // Leitura dos dados da Carta 2 (similar à Carta 1)
+    // Leitura dos dados da Carta 2 
     printf("\nDigite os dados da Carta 2:\n");
 
     printf("Estado (A-H): ");
@@ -67,7 +66,7 @@ int main() {
 
     printf("Nome da Cidade: ");
     fgets(cidade2, sizeof(cidade2), stdin);
-    cidade2[strcspn(cidade2, "\n")] = 0; // Remover a nova linha do fgets
+    cidade2[strcspn(cidade2, "\n")] = 0; 
 
     printf("Populacao: ");
     fgets(buffer, sizeof(buffer), stdin);
